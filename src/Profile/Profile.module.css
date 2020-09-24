@@ -1,0 +1,93 @@
+/* TODO - Variables */
+@value bgColorLight from './varProfile.module.css';
+@value bgColorNormal from './varProfile.module.css';
+@value bgColorDark from './varProfile.module.css';
+@value textColorLight from './varProfile.module.css';
+@value textColorDark from './varProfile.module.css';
+@value radiusSize from './varProfile.module.css';
+
+.profile {
+  background-color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: radiusSize;
+  box-shadow: 0px 0px 5px 0px bgColorDark;
+}
+
+.description {
+  padding: 40px 0;
+}
+
+.avatar {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid bgColorNormal;
+}
+
+.name {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: textColorDark;
+}
+
+.tag {
+  margin: 10px 0;
+  text-align: center;
+  color: textColorLight;
+}
+
+.location {
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: textColorLight;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statsItem {
+  width: 100%;
+  background-color: bgColorLight;
+  border: 1px solid transparent;
+  border-top-color: bgColorNormal;
+}
+
+.statsItem:nth-of-type(1) {
+  border-bottom-left-radius: radiusSize;
+}
+
+.statsItem:nth-of-type(2) {
+  border-left-color: bgColorNormal;
+  border-right-color: bgColorNormal;
+}
+
+.statsItem:nth-last-of-type(1) {
+  border-bottom-right-radius: radiusSize;
+}
+
+.label,
+.quantity {
+  display: block;
+  text-align: center;
+}
+
+.label {
+  color: textColorLight;
+  font-weight: 400;
+  padding: 20px 0 2px 0;
+}
+
+.quantity {
+  color: textColorDark;
+  font-weight: 900;
+  padding: 2px 0 20px 0;
+}
